@@ -1,38 +1,144 @@
 .App {
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Lora, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+  color: black;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+a:visited {
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+  background-color: #DCDCDC;
+}
+
+a:active {
+  color: #696969;
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkq0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Dark/Light Mode Styles */
+
+.light-mode {
+  background-color: #fff;
+  color: #000000;
+}
+
+.dark-mode body {
+  background-color: transparent !important;
+}
+
+.light-mode header svg {
+  color: black;
+}
+
+.dark-mode,
+.dark-mode header,
+.dark-mode header a,
+.dark-mode header svg {
+  background-color: #252525 !important;
+  color: #f5f5f5 !important;
+}
+
+.dark-mode .dropdownContent p,
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode b,
+.dark-mode .submit span,
+.dark-mode #char_counter {
+  color: #f5f5f5 !important;
+}
+
+.dark-mode span,
+.dark-mode span span,
+.dark-mode a {
+  color: lightgray;
+}
+
+.dark-mode span:hover,
+.dark-mode span span:hover,
+.dark-mode span:hover span,
+.dark-mode div:hover div p{
+  color: white !important;
+}
+
+.dark-mode a:hover {
+  color: black;
+}
+
+.dark-mode header a:hover,
+.dark-mode header svg:hover,
+.dark-mode header a:hover svg,
+.dark-mode footer a:hover svg,
+.dark-mode a:hover {
+  background-color: #444444 !important;
+}
+
+.dark-mode a:hover {
+  color: white !important;
+}
+
+.dark-mode em {
+  color: #b5b5b5b6 !important;
+}
+
+.dark-mode li {
+  color: #f5f5f5 !important;
+  background-color: dimgray !important;
+}
+
+.dark-mode ::placeholder {
+  color: #f5f5f5 !important;
+}
+
+.dark-mode #innerContact {
+  border: 1px solid dimgray !important;
+}
+
+.dark-mode footer {
+  background-color: #252525;
+  box-shadow: 5px 5px 10px black;
+}
+
+
+.dark-mode footer a svg {
+  color: #f9d71c !important;
+}
+
+.light-mode footer a svg {
+  color: #001e5e !important;
 }

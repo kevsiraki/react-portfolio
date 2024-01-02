@@ -1,0 +1,10 @@
+footer {
+    padding: 25px;
+    background-color: #F5F5F5;
+    box-shadow: 5px 5px 10px black;
+}
+
+.darkModeButton {
+    border-radius: 5px;
+}
+

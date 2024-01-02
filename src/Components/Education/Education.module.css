@@ -1,0 +1,58 @@
+.educationSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.educationEntry {
+    margin-bottom: 20px;
+}
+
+/* education Entry styles */
+.dropdown {
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 600px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown b {
+    color: black;
+}
+
+.dropdown {
+    color: #3a3a3a;
+}
+
+.dropdown:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.arrow {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.dropdownContent {
+    display: none;
+
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.dropdownContent p {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Show the content when expanded */
+.expanded .dropdownContent {
+    display: block;
+}
